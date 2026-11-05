@@ -9,3 +9,34 @@
 .code-feature{display:grid;grid-template-columns:1fr auto;gap:36px;align-items:center;background:var(--sage);border:1px solid var(--line);padding:30px}
 .code-feature .eyebrow{margin-bottom:13px}.code-feature h3{font-size:34px;margin-bottom:15px}.code-feature p:not(.eyebrow){font-size:14px;color:var(--muted);line-height:1.85}.code-feature .code-paper{font-size:12px!important;margin:18px 0 0}.code-actions{display:flex;flex-direction:column;align-items:flex-start;gap:18px}.code-actions .button{white-space:nowrap}.pub-links{margin-top:11px}.project-links{display:flex;gap:24px;flex-wrap:wrap}
 @media(max-width:780px){.code-feature{grid-template-columns:1fr;gap:24px;padding:24px}.code-feature h3{font-size:30px}.code-actions{gap:15px}}
+.hero {
+  max-width: 1280px;
+  grid-template-columns: 128px minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 32px;
+}
+
+.profile-photo {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  align-self: start;
+  margin-top: 42px;
+}
+
+@media (max-width: 1000px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo {
+    width: 96px;
+    height: 96px;
+    margin-top: 0;
+  }
+
+  .research-note {
+    max-width: 420px;
+  }
+}
