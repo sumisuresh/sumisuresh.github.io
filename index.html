@@ -12,7 +12,7 @@
   <meta name="theme-color" content="#773e44">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/site.css?v=photo3">
+  <link rel="stylesheet" href="assets/site.css?v=research-visuals-1">
   <script src="assets/site.js" defer></script>
 </head>
 
@@ -177,45 +177,62 @@
     </section>
 
     <!-- Research interests -->
-    <section class="wrap section">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">QUESTIONS THAT GUIDE MY WORK</p>
-          <h2>Research interests</h2>
+    <section id="research-interests" class="wrap section" aria-labelledby="research-interests-title">
+      <div class="research-interest-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">QUESTIONS THAT GUIDE MY WORK</p>
+            <h2 id="research-interests-title">Research interests</h2>
+          </div>
+          <a class="text-link" href="research.html">Research in detail <span aria-hidden="true">↗</span></a>
         </div>
-
-        <a class="text-link" href="research.html">
-          Research in detail <span aria-hidden="true">↗</span>
-        </a>
-      </div>
-
-      <div class="interest-grid">
-        <article>
-          <span class="number">01</span>
-          <h3>Handwriting &amp; document intelligence</h3>
-          <p>
-            Recognizing what children write while preserving spelling,
-            reversals, and other meaningful details.
-          </p>
-        </article>
-
-        <article>
-          <span class="number">02</span>
-          <h3>AI for education &amp; learning needs</h3>
-          <p>
-            Turning handwriting and language measures into evidence
-            for screening and progress monitoring.
-          </p>
-        </article>
-
-        <article>
-          <span class="number">03</span>
-          <h3>Computer vision &amp; applied AI</h3>
-          <p>
-            Developing methods for multimodal learning,
-            medical image analysis, and constrained optimization.
-          </p>
-        </article>
+        <div class="research-visual-grid">
+          <article class="interest-card">
+            <div class="interest-thumb research-scene scene-education" role="img" aria-label="Concept illustration of AI-supported learning in a classroom"></div>
+            <div class="interest-card-copy">
+              <p class="eyebrow">01 · HANDWRITING &amp; EDUCATION</p>
+              <h3>Handwriting &amp;<br>educational AI</h3>
+              <p>Recognizing child handwriting while preserving meaningful errors, and turning writing measures into support for screening and progress monitoring.</p>
+              <a class="text-link" href="research.html#child-handwriting">Explore this work <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="interest-card">
+            <div class="interest-thumb research-scene scene-healthcare" role="img" aria-label="Concept illustration of AI-assisted brain imaging research"></div>
+            <div class="interest-card-copy">
+              <p class="eyebrow">02 · HEALTHCARE AI</p>
+              <h3>Medical image<br>analysis</h3>
+              <p>Developing methods for CT-based stroke assessment, perfusion-related map generation, and segmentation of affected brain regions.</p>
+              <a class="text-link" href="research.html#healthcare-ai">Explore this work <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="interest-card">
+            <div class="interest-thumb"><img src="assets/sign-language-recognition.png" width="1024" height="1024" loading="lazy" decoding="async" alt="Concept illustration of a signer with visual hand-landmark recognition overlays"></div>
+            <div class="interest-card-copy">
+              <p class="eyebrow">03 · ACCESSIBLE COMMUNICATION</p>
+              <h3>Sign language<br>recognition</h3>
+              <p>Studying multilingual sign recognition through skeleton representations, informative frames, pattern generation, and temporal modeling.</p>
+              <a class="text-link" href="research.html#sign-language">Explore this work <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+          <article class="interest-card">
+            <div class="interest-thumb research-scene scene-vision" role="img" aria-label="Concept illustration of computer vision and camera networks in an urban setting"></div>
+            <div class="interest-card-copy">
+              <p class="eyebrow">04 · VISION &amp; OPTIMIZATION</p>
+              <h3>Computer vision<br>&amp; optimization</h3>
+              <p>Designing scalable methods for camera placement, energy-aware operation, and recovery from camera failures.</p>
+              <a class="text-link" href="research.html#camera-coverage">Explore this work <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <figure class="coverage-example">
+          <a class="coverage-image-link" href="research.html#camera-coverage" aria-label="Read about camera coverage research"><img src="assets/camera-coverage-example.png" width="185" height="174" loading="lazy" decoding="async" alt="Aerial camera-coverage example supplied by Sumi Suresh, showing a total coverage label of 95 percent"></a>
+          <figcaption>
+            <p class="eyebrow">CAMERA COVERAGE IN PRACTICE</p>
+            <h3>Camera coverage under resource constraints</h3>
+            <p>Coverage optimization connects placement decisions with the area a camera network can observe, while accounting for limited resources.</p>
+            <a class="text-link" href="publications.html?q=coverage">Explore coverage publications <span aria-hidden="true">↗</span></a>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
@@ -290,6 +307,18 @@
           </a>
         </div>
       </article>
+      <article class="code-feature" id="dual-htr-code" style="margin-top: 24px;" aria-labelledby="dual-htr-code-title">
+        <div>
+          <p class="eyebrow">PYTHON · ACTUAL &amp; INTENDED TRANSCRIPTION</p>
+          <h3 id="dual-htr-code-title"><a href="https://github.com/sumisuresh/Dual-HTR" target="_blank" rel="noopener noreferrer">Dual-HTR</a></h3>
+          <p>Dual-output child handwriting transcription: ScribbleFormer predicts the actual written text, and a recognition-aware multimodal decoder predicts a minimally corrected intended interpretation using text, visual features, and confidence.</p>
+          <p class="code-paper"><strong>Related publication:</strong> <a href="publications.html#pub-dual-htr">A recognition-aware multimodal framework for actual and intended text transcription of child handwriting.</a><br>Document Analysis Systems (DAS 2026), LNCS 16851, pp. 371–388. Proceedings published in 2027.</p>
+        </div>
+        <div class="code-actions">
+          <a class="button" href="https://github.com/sumisuresh/Dual-HTR" target="_blank" rel="noopener noreferrer">View code on GitHub <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="https://doi.org/10.1007/978-3-032-36207-0_22" target="_blank" rel="noopener noreferrer">Read paper <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
     </section>
 
     <!-- Selected publications -->
@@ -329,31 +358,27 @@
           </p>
 
           <span class="area-label">Handwriting &amp; education</span>
-          <p class="pub-links"><a class="text-link" href="https://github.com/sumisuresh/Document-Enhancement" target="_blank" rel="noopener noreferrer">Code · Doc-Enhancement <span aria-hidden="true">↗</span></a></p>
+          <p class="pub-links"><a class="text-link" href="https://github.com/sumisuresh/Document-Enhancement" target="_blank" rel="noopener noreferrer">Code · Document Enhancement <span aria-hidden="true">↗</span></a></p>
           
         </div>
       </article>
 
-      <article class="publication"
+      <article id="pub-dual-htr" class="publication"
                data-kind="Conference"
-               data-search="conference 2026 a recognition-aware multimodal framework for actual and intended text transcription of child handwriting m. s. s. suresh, s. rangasrinivasan, a. olszewski, s. setlur, and v. govindaraju international workshop on document analysis systems, icdar 2026, pp. 371–388 handwriting &amp; education">
+               data-search="dual-htr actual intended dual output 2027 10.1007/978-3-032-36207-0_22 conference 2026 a recognition-aware multimodal framework for actual and intended text transcription of child handwriting m. s. s. suresh, s. rangasrinivasan, a. olszewski, s. setlur, and v. govindaraju international workshop on document analysis systems, icdar 2026, pp. 371–388 handwriting &amp; education">
         <div class="pub-year">
           2026
           <span>Conference</span>
         </div>
 
         <div>
-          <h3>
-            A recognition-aware multimodal framework for actual and
-            intended text transcription of child handwriting
-          </h3>
+          <h3><a href="https://doi.org/10.1007/978-3-032-36207-0_22" target="_blank" rel="noopener noreferrer">A recognition-aware multimodal framework for actual and
+            intended text transcription of child handwriting <span aria-hidden="true">↗</span></a></h3>
 
-          <p class="venue">
-            International Workshop on Document Analysis Systems,
-            ICDAR 2026, pp. 371–388
-          </p>
+          <p class="venue">Document Analysis Systems (DAS 2026), LNCS 16851, pp. 371–388. Proceedings published in 2027.</p>
 
           <span class="area-label">Handwriting &amp; education</span>
+          <p class="pub-links"><a class="text-link" href="https://github.com/sumisuresh/Dual-HTR" target="_blank" rel="noopener noreferrer">Code · Dual-HTR <span aria-hidden="true">↗</span></a></p>
         </div>
       </article>
 
